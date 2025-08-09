@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -42,76 +40,75 @@ nav ul li a {
   font-weight: bold;
 }
 
-/* SOCIAL ICONS */
+/* Container das redes sociais */
 .socials-container {
-  display: flex;
-  gap: 20px;
-  margin-top: 10px;
+    display: flex;
+    gap: 1rem;
+    justify-content: left;
+    padding: 1rem;
 }
 
+/* Ícones */
 .socials-container a {
-  position: relative; /* NECESSÁRIO PARA TOOLTIP */
-  background-color: white;
-  padding: 1em;
-  border-radius: 50%;
-  height: 64px;
-  width: 64px;
-  display: grid;
-  place-items: center;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
-  transition: background-color 0.2s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #282B3A;
+    transition: transform 0.2s, background-color 0.3s;
 }
 
+/* SVG */
 .socials-container a svg {
-  height: 32px;
-  width: 32px;
+    width: 24px;
+    height: 24px;
+    fill: #E6E7E9;
 }
 
-.socials-container a::before {
-  content: attr(data-social);
-  position: absolute;
-  background-color: var(--accent-color);
-  color: white;
-  padding: 0.5em 1em;
-  border-radius: 100px;
-  white-space: nowrap;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
-  transform: translateY(-30px) rotate(25deg);
-  opacity: 0;
-  transition: 200ms cubic-bezier(.42,0,.44,1.68);
-}
-
-.socials-container a::after {
-  content: '';
-  position: absolute;
-  height: 0;
-  width: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 10px solid var(--accent-color);
-  transform: translateY(0) rotate(25deg);
-  opacity: 0;
-  transition: 200ms cubic-bezier(.42,0,.44,1.68);
-}
-
+/* Efeito hover no ícone */
 .socials-container a:hover {
-  background-color: var(--accent-color);
+    transform: scale(1.1);
+    background-color: var(--accent-color);
 }
 
-.socials-container a:hover svg {
-  fill: white;
+/* Tooltip */
+.socials-container a::after {
+    content: attr(data-social);
+    position: absolute;
+    bottom: -2.2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background-color: #000000cc;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    transition: opacity 0.3s, transform 0.3s;
 }
 
+/* Seta do tooltip */
+.socials-container a::before {
+    content: "";
+    position: absolute;
+    bottom: -0.4rem;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 8px;
+    height: 8px;
+    background-color: #000000cc;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Mostrar tooltip ao passar o mouse */
+.socials-container a:hover::after,
 .socials-container a:hover::before {
-  transform: translateY(-65px) rotate(0);
-  opacity: 1;
-}
-
-.socials-container a:hover::after {
-  transform: translateY(-42px) rotate(0);
-  opacity: 1;
-}
-.socials-container a:hover::after {
-  transform: translateY(-42px) rotate(0);
-  opacity: 1;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
