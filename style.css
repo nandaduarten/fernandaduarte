@@ -51,80 +51,6 @@ nav ul li a {
 nav ul li a:hover {
   color: #a24ca6; /* Roxo vibrante */
 }
-
-/* Container das redes sociais */
-.socials-container {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  padding: 1rem;
-}
-
-/* Ícones */
-.socials-container a {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: #2a2a2a; /* Preto acinzentado */
-  transition: transform 0.2s, background-color 0.3s;
-}
-
-/* SVG */
-.socials-container a svg {
-  width: 24px;
-  height: 24px;
-  fill: #f8e1f4; /* Rosa bem claro */
-}
-
-/* Efeito hover no ícone */
-.socials-container a:hover {
-  transform: scale(1.1);
-  background-color: #a24ca6; /* Roxo vibrante */
-}
-
-/* Tooltip */
-.socials-container a::after {
-  content: attr(data-social);
-  position: absolute;
-  bottom: -2.2rem;
-  left: 50%;
-  transform: translateX(-50%) translateY(10px);
-  background-color: #000000cc;
-  color: #fff;
-  font-size: 0.75rem;
-  padding: 4px 8px;
-  border-radius: 4px;
-  opacity: 0;
-  pointer-events: none;
-  white-space: nowrap;
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-/* Seta do tooltip */
-.socials-container a::before {
-  content: "";
-  position: absolute;
-  bottom: -0.4rem;
-  left: 50%;
-  transform: translateX(-50%) rotate(45deg);
-  width: 8px;
-  height: 8px;
-  background-color: #000000cc;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-/* Mostrar tooltip ao passar o mouse */
-.socials-container a:hover::after,
-.socials-container a:hover::before {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-}
-
 /* Seção Hero (Início) */
 /* Seção Hero (Início) */
 .hero {
@@ -246,4 +172,9 @@ nav ul li a:hover {
   .content p {
     font-size: 0.9rem;
   }
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
