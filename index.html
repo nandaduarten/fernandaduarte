@@ -7,20 +7,25 @@
     <title>Fernanda Duarte</title>
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
+<script src="funcoes/funcoes.js"></script>
 
 <body>
 
     <header>
         <nav>
-            <h1 class="logo">Fernanda Duarte</h1>
+           
+            <img src="imagens/letra-f.png">
             <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobremim">Sobre Mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#redessociais">Redes Sociais</a></li>
-                <li><a href="#tecnologiajogos">Tecnologia e Jogos</a></li>
+                <li onmouseover="mudafoto('imagens/home.png')" onmouseout="mudafoto('imagens/letra-f.png')"><a
+                        href="index.html">Início</a></li>
+                <li onmouseover="mudafoto('imagens/sobremim.png')" onmouseout="mudafoto('imagens/letra-f.png')"><a
+                        href="sobremim.html">Sobre Mim</a></li>
+                <li onmouseover="mudafoto('imagens/projetos.png')" onmouseout="mudafoto('imagens/letra-f.png')"><a
+                        href="projetos.html">Projetos</a></li>
+                <li onmouseover="mudafoto('imagens/tecnologia.png')" onmouseout="mudafoto('imagens/letra-f.png')"><a
+                        href="tecnologiajogos.html">Tecnologia e Jogos</a></li>
             </ul>
         </nav>
     </header>
@@ -29,21 +34,26 @@
         <!-- Seção Início -->
         <section id="inicio" class="hero">
             <div class="hero-text">
-                <h2>Bem-vindo ao meu site!</h2>
+                <h1 class="titulo-futurista">
+                    Fernanda Duarte — Level Up na Criatividade Digital
+                </h1>
+
             </div>
         </section>
 
         <!-- Seção Sobre Mim -->
         <section id="sobremim" class="content">
             <h2>Sobre Mim</h2>
-            <p>Formada em Ciências Sociais pela Universidade Estadual do Vale do Acaraú, hoje estou mergulhando no mundo
-                da programação web no Senac Sobral.
+            <p>Formada em Ciências Sociais pela Universidade Estadual do Vale do Acaraú, hoje estou me aventurando no
+                mundo
+                da programação web e web designer.
                 Aqui, quero reunir meus projetos, trocar ideias e compartilhar o que aprendo sobre tecnologia e jogos.
             </p>
-            <a class="btn" href="#projetos">Saiba mais</a>
+            <a class="btn" href="projetos.html">Saiba mais</a>
         </section>
 
         <!-- Aqui você pode colocar mais seções -->
+
     </main>
 
     <footer id="contato" class="footer">
