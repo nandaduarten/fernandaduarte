@@ -1,85 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fernanda Duarte</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
-    <link rel="stylesheet" href="style/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernanda Duarte</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<script src="funcoes/funcoes.js"></script>
-
 <body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">Fernanda<br>Duarte</h2>
+      <nav>
+        <a href="index.html" target="conteudo"><i class="fa fa-home"></i> Início</a>
+        <a href="sobremim.html" target="conteudo"><i class="fa fa-user"></i> Sobre Mim</a>
+        <a href="tecnologiajogos.html" target="conteudo"><i class="fa fa-laptop"></i> Tecnologia e Jogos</a>
+        <a href="projetos.html" target="conteudo"><i class="fa fa-code"></i> Projetos</a>
+      </nav>
+    </aside>
 
-    <header>
-        <nav>
-           
-            <img src="imagens/letra-f.png">
-            <ul>
-                <li onmouseover="mudafoto('imagens/home.png')" onmouseout="mudafoto('imagens/letra-f.png')"><a
-                        href="index.html">Início</a></li>
-                <li onmouseover="mudafoto('imagens/sobremim.png')" onmouseout="mudafoto('imagens/letra-f.png')"><a
-                        href="sobremim.html">Sobre Mim</a></li>
-                <li onmouseover="mudafoto('imagens/projetos.png')" onmouseout="mudafoto('imagens/letra-f.png')"><a
-                        href="projetos.html">Projetos</a></li>
-                <li onmouseover="mudafoto('imagens/tecnologia.png')" onmouseout="mudafoto('imagens/letra-f.png')"><a
-                        href="tecnologiajogos.html">Tecnologia e Jogos</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Conteúdo principal -->
+    <main class="content">
+      <header class="header">
+        <h1></h1>
+      </header>
 
-    <main>
-        <!-- Seção Início -->
-        <section id="inicio" class="hero">
-            <div class="hero-text">
-                <h1 class="titulo-futurista">
-                    Fernanda Duarte — Level Up na Criatividade Digital
-                </h1>
+      <section class="iframe-container">
+        <iframe src="primeira-pagina.html" name="conteudo"></iframe>
+      </section>
 
-            </div>
-        </section>
-
-        <!-- Seção Sobre Mim -->
-        <section id="sobremim" class="content">
-            <h2>Sobre Mim</h2>
-            <p>Formada em Ciências Sociais pela Universidade Estadual do Vale do Acaraú, hoje estou me aventurando no
-                mundo
-                da programação web e web designer.
-                Aqui, quero reunir meus projetos, trocar ideias e compartilhar o que aprendo sobre tecnologia e jogos.
-            </p>
-            <a class="btn" href="projetos.html">Saiba mais</a>
-        </section>
-
-        <!-- Aqui você pode colocar mais seções -->
-
-    </main>
-
-    <footer id="contato" class="footer">
+      <footer class="footer">
         <h2>Contato</h2>
-        <p>Entre em contato comigo pelas minhas redes sociais abaixo:</p>
-        <a href="https://x.com/gifsfla" target="_blank" class="icon twitter">
-            <div class="tooltip">Twitter</div>
-            <span><i class="fa fa-twitter"></i></span>
-        </a>
-
-        <a href="https://www.instagram.com/fernandaduarten/" target="_blank" class="icon instagram">
-            <div class="tooltip">Instagram</div>
-            <span><i class="fa fa-instagram"></i></span>
-        </a>
-
-        <a href="https://github.com/fernandaduarten" target="_blank" class="icon github">
-            <div class="tooltip">Github</div>
-            <span><i class="fa fa-github"></i></span>
-        </a>
-
-        <!-- Font Awesome (necessário para os ícones) -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <p>Entre em contato comigo pelas minhas redes sociais:</p>
+        <div class="social-links">
+          <a href="https://x.com/gifsfla" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/fernandaduarten/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://github.com/fernandaduarten" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
         <p class="copy">&copy; 2025 Fernanda Duarte. Todos os direitos reservados.</p>
-    </footer>
-
+      </footer>
+    </main>
+  </div>
 </body>
-
 </html>
