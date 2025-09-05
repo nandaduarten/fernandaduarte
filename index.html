@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR"> <!-- Corrigido para português do Brasil -->
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Fernanda Duarte</title> <!-- Título mais significativo -->
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS principal deve estar dentro do <head> -->
+  <link rel="stylesheet" href="style/style.css">
 </head>
-<link rel="stylesheet" href="style/style.css">
 
 <body>
-
   <div class="layout">
+
     <!-- Sidebar -->
     <aside class="sidebar">
       <div>
         <h2 class="logo">Fernanda<br>Duarte</h2>
         <nav>
-          <a href="index.html"><i class="fa fa-home"></i> Início</a>
-          <a href="sobremim.html"><i class="fa fa-user"></i> Sobre Mim</a>
-          <a href="tecnologiajogos.html"><i class="fa fa-laptop"></i> Tecnologia e Jogos</a>
-          <a href="projetos.html"><i class="fa fa-code"></i> Projetos</a>
-          <a href="esportes.html"><i class="fa fa-futbol-o"></i> Esportes</a>
+          <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Início</a>
+          <a href="sobremim.html"><i class="fa fa-user" aria-hidden="true"></i> Sobre Mim</a>
+          <a href="tecnologiajogos.html"><i class="fa fa-laptop" aria-hidden="true"></i> Tecnologia e Jogos</a>
+          <a href="projetos.html"><i class="fa fa-code" aria-hidden="true"></i> Projetos</a>
+          <a href="esportes.html"><i class="fa fa-futbol-o" aria-hidden="true"></i> Esportes</a>
         </nav>
       </div>
 
@@ -29,10 +33,12 @@
         <h2>Contato</h2>
         <p>Entre em contato comigo pelas minhas redes sociais:</p>
         <div class="social-links">
-          <a href="https://x.com/gifsfla" target="_blank"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.instagram.com/fernandaduarten/" target="_blank"><i class="fa fa-instagram"></i></a>
-          <a href="https://github.com/fernandaduarten" target="_blank"><i class="fa fa-github"></i></a>
-
+          <a href="https://x.com/gifsfla" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"
+              aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/fernandaduarten/" target="_blank" rel="noopener noreferrer"><i
+              class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://github.com/fernandaduarten" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"
+              aria-hidden="true"></i></a>
         </div>
         <p class="copy">&copy; 2025 Fernanda Duarte. Todos os direitos reservados.</p>
       </footer>
@@ -43,35 +49,36 @@
       <section class="inicio">
         <h1>Bem-vindo ao meu site!</h1>
         <p>Aqui você encontra minhas publicações sobre tecnologia, jogos e projetos.</p>
+      </section>
 
-        <div class="cards">
-          <!-- Card 1 -->
-          <div class="card">
-            <img
-              src="https://s2-g1.glbimg.com/p0KzBTrD-bGSnaKLCibBXLJ1I0o=/0x0:1202x726/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/L/Z/qoUAV9R22OM9OgnWkMCw/roblox-3.jpg"
-              alt="Roblox protesto">
-            <h2>Jogadores usam Roblox para protestar</h2>
-            <p>Entenda como jovens transformaram o jogo em palco de manifestações.</p>
-            <a href="tecnologiajogos.html" class="btn">Ler mais</a>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="card">
-            <img src="imagens/projetos.jpg" alt="Projetos">
-            <h2>Meus Projetos</h2>
-            <p>Confira os trabalhos que desenvolvi em tecnologia e design.</p>
-            <a href="projetos.html" class="btn">Ver projetos</a>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="card">
-            <img src="imagens/sobremim.jpg" alt="Sobre Mim">
-            <h2>Sobre Mim</h2>
-            <p>Saiba mais sobre minha trajetória e interesses pessoais.</p>
-            <a href="sobremim.html" class="btn">Ler mais</a>
-          </div>
+      <div class="projetos-cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <img
+            src="https://s2-g1.glbimg.com/p0KzBTrD-bGSnaKLCibBXLJ1I0o=/0x0:1202x726/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/L/Z/qoUAV9R22OM9OgnWkMCw/roblox-3.jpg"
+            alt="Roblox protesto">
+          <h2>Jogadores usam Roblox para protestar</h2>
+          <p>Entenda como jovens transformaram o jogo em palco de manifestações.</p>
+          <a href="tecnologiajogos.html" class="btn">Ler mais</a>
         </div>
 
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="imagens/projetos.jpg" alt="Projetos">
+          <h2>Meus Projetos</h2>
+          <p>Confira os trabalhos que desenvolvi em tecnologia e design.</p>
+          <a href="projetos.html" class="btn">Ver projetos</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="imagens/sobremim.jpg" alt="Sobre Mim">
+          <h2>Sobre Mim</h2>
+          <p>Saiba mais sobre minha trajetória e interesses pessoais.</p>
+          <a href="sobremim.html" class="btn">Ler mais</a>
+        </div>
+
+        <!-- Card 4 -->
         <div class="card">
           <img
             src="https://s2-ge.glbimg.com/b-jkK_G0EHL7IfzVqV-QS2dyl3w=/0x0:1920x1280/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/7/6/6kRXs8SPuVQWQVYhiM4w/thumbnail-dur-3710.jpg"
@@ -81,6 +88,7 @@
           <a href="esportes.html" class="btn">Ler mais</a>
         </div>
 
+        <!-- Card 5 -->
         <div class="card">
           <img
             src="https://s2-ge.glbimg.com/_TkKgvtoY_IaXd4wgDJAMJy2m6o=/0x0:6891x4594/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/H/x/TnrPoDRYqQbZENyeWJ3w/afp-20250905-73gj7au-v1-highres-fblwc2026samericaqualifiersbrachi.jpg"
@@ -89,9 +97,7 @@
           <p>Seleção brasileira se despede das Eliminatórias com vitória no Maracanã.</p>
           <a href="esportes.html" class="btn">Ler mais</a>
         </div>
-
-      </section>
-
+      </div>
     </main>
   </div>
 </body>
