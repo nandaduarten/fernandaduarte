@@ -27,28 +27,55 @@ body {
   margin-bottom: 30px;
 }
 
+/* Ícones do menu lateral */
 .sidebar nav a {
-  display: block;
-  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espaço entre o ícone e o texto */
+  color: #f7f7f7;
   text-decoration: none;
-  margin: 10px 0;
-  padding: 8px;
-  border-radius: 6px;
-  transition: background 0.3s;
+  padding: 8px 0;
+  transition: color 0.3s ease;
 }
 
+.sidebar nav a i {
+  font-size: 20px; /* tamanho do ícone */
+}
+
+footer h2 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
 .sidebar nav a:hover {
-  background: #333;
+  color: #ffcc00; /* muda a cor ao passar o mouse */
 }
 
 .sidebar .footer {
   font-size: 12px;
 }
 
+
+/* Ícones das redes sociais */
 .social-links a {
-  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
   margin-right: 10px;
-  font-size: 16px;
+  background-color: #222;
+  border-radius: 50%;
+  color: #f7f7f7;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #ffcc00;
+  color: #111;
 }
 
 /* Conteúdo principal */
@@ -90,4 +117,35 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+article {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+h1, h2, h3 {
+  color: #080808;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+section h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #110e0e;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+p {
+  line-height: 1.6;
+  color: #555;
+}
+a {
+  color: #0066cc;
+  text-decoration: none;
 }
