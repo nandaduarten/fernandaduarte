@@ -117,3 +117,39 @@ body {
 .btn:hover {
   background: #444;
 }
+.icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .sidebar nav {
+    display: flex;
+    gap: 10px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
